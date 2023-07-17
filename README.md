@@ -1,27 +1,46 @@
 # Moroseando
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+![Moroseando Logo](./path/to/logo.png)
 
-## Development server
+Moroseando es una aplicación web que te permite calcular y dividir cuentas de forma equitativa entre un grupo de personas. Es ideal para situaciones en las que un grupo de amigos o compañeros comparte gastos y necesitan distribuirlos de manera justa.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Características
 
-## Code scaffolding
+- Permite agregar personas con sus nombres y la cantidad de dinero que han aportado.
+- Calcula automáticamente el costo medio y distribuye la deuda entre las personas según su contribución.
+- Muestra un registro de mensajes con los pagos que deben realizar las personas.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Capturas de pantalla
 
-## Build
+![Captura de pantalla 1](./path/to/screenshot1.png)
+![Captura de pantalla 2](./path/to/screenshot2.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación
 
-## Running unit tests
+1. Clona el repositorio: `git clone https://github.com/AlvaroOrtizP/Moroseando.git`
+2. Navega al directorio del proyecto: `cd Moroseando`
+3. Instala las dependencias: `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Uso
 
-## Running end-to-end tests
+1. Inicia la aplicación: `npm start`
+2. Accede a la aplicación en tu navegador: `http://localhost:4200`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contribución
 
-## Further help
+¡Contribuciones bienvenidas! Si deseas contribuir a Moroseando, sigue estos pasos:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Haz un fork del repositorio.
+2. Crea una rama para tu función o corrección de errores: `git checkout -b feature/MyFeature` o `git checkout -b bugfix/MyBugFix`
+3. Realiza tus cambios y realiza commit de tus cambios: `git commit -m 'Add some feature'`
+4. Empuja tus cambios a la rama: `git push origin feature/MyFeature`
+5. Envía una Pull Request al repositorio principal.
+
+## Autor
+
+Alvaro Ortiz - [@tu_usuario_de_twitter](https://twitter.com/tu_usuario_de_twitter)
+
+## Licencia
+
+Este proyecto está bajo la Licencia [MIT](LICENSE).
+

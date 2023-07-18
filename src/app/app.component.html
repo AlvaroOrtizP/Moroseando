@@ -1,41 +1,51 @@
 <div class="container">
-  <h2 class="center">SplitBill - Dividir Cuenta</h2>
-
-  <div class="input-section">
-    <label for="nameInput">Nombre:</label>
-    <input type="text" id="nameInput" [(ngModel)]="newPerson.name">
-    <label for="amountInput">Dinero aportado:</label>
-    <input type="number" id="amountInput" [(ngModel)]="newPerson.dineroAportado">
-    <button (click)="addPerson()">Agregar Persona</button>
+  <h2 class="text-center mt-5">SplitBill</h2>
+  
+  <div class="text-center">
+    <div class="mx-auto p-3 mt-4">
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-md-2 col-form-label" for="nameInput">Nombre:</label>
+        <div class="col-sm-9 col-md-3">
+          <input type="text" id="nameInput" class="form-control" [(ngModel)]="newPerson.name">
+        </div>
+        <label for="amountInput" class="col-sm-3 col-md-2 col-form-label">Dinero aportado:</label>
+        <div class="col-sm-9 col-md-3">
+          <input type="number" id="amountInput" class="form-control" [(ngModel)]="newPerson.dineroAportado">
+        </div>
+        <div class="col-sm-9 col-md-2 mt-3 mt-md-0">
+          <button class="btn btn-success btn-block" (click)="addPerson()">Agregar Persona</button>
+        </div>
+      </div>
+    </div>
   </div>
-
   <hr>
 
-  <h3 class="center">Personas</h3>
+  <h3 class="text-center mt-4">Personas</h3>
 
-  <table class="center">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Dinero aportado</th>
-        <th>Pagar / Recibir</th>
-        <th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let person of people; let i = index">
-        <td>{{ person.name }}</td>
-        <td>{{ person.dineroAportado }} €</td>
-        <td>{{ person.pagarRecibir }}</td>
-        <td><button (click)="deletePerson(i)">Eliminar</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Dinero aportado</th>
+          <th>Pagar / Recibir</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of people; let i = index">
+          <td>{{ person.name }}</td>
+          <td>{{ person.dineroAportado }} €</td>
+          <td>{{ person.pagarRecibir }}</td>
+          <td><button class="btn btn-warning btn-sm" (click)="deletePerson(i)">Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <div class="log-section">
-    <h3 class="center">Registro de mensajes</h3>
-    <p class="log-textarea" readonly>El coste medio fue de {{ media }} €</p>
-    <p class="log-textarea" readonly [innerHTML]="logMessages"></p>
-
+  <div class="log-section mt-5">
+    <h3 class="text-center">Registro de mensajes</h3>
+    <p class="log-textarea mx-3" readonly>El coste medio fue de {{ media }} €</p>
+    <p class="log-textarea mx-3" readonly [innerHTML]="logMessages"></p>
   </div>
 </div>

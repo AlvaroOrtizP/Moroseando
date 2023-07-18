@@ -33,6 +33,9 @@ export class AppComponent implements OnInit {
     if(this.people.length>1){
       this.calculateTotalPagado();
       this.calculateMorosidad();
+    }else{
+      this.logMessages = ``;
+      this.logMessagesMedia =  ``;
     }
    
   }
@@ -54,7 +57,7 @@ export class AppComponent implements OnInit {
   calculateMorosidad() {
     // Calcular media
     this.media = this.totalPagado / this.people.length;
-    this.logMessagesMedia =  `El coste medio fue de ${ this.media } €\n`;
+    this.logMessagesMedia =  `El coste medio fue de ${ this.media.toFixed(2) } €\n`;
     let totalDeudaPagadoresNega = 0;
     this.peoplePosi = [];
     this.peopleNega = [];

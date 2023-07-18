@@ -12,7 +12,7 @@ Moroseando es una aplicación web que te permite calcular y dividir cuentas de f
 
 ## Capturas de pantalla
 
-![Captura de pantalla 1](./path/to/screenshot1.png)
+![Captura de pantalla 1](./tree/main/images/1.jpg)
 ![Captura de pantalla 2](./path/to/screenshot2.png)
 
 ## Instalación

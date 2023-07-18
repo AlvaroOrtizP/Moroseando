@@ -21,11 +21,11 @@ Moroseando es una aplicación web que te permite calcular y dividir cuentas de f
 1. Inicia la aplicación: `npm start`
 2. Accede a la aplicación en tu navegador: `http://localhost:4200`
 
-![Captura de pantalla 1](./tree/main/images/vacia.jpg)
+![Captura de pantalla 1](./tree/main/images/vacia.PNG)
 
 3. Rellena con los datos queridos
 
-![Captura de pantalla 2](./tree/main/images/completa.jpg)
+![Captura de pantalla 2](./tree/main/images/completa.PNG)
 
 ## Autor
 

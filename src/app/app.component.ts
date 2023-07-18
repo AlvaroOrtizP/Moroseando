@@ -15,6 +15,7 @@ interface Person {
 })
 export class AppComponent implements OnInit {
   logMessages: string = '';  
+  logMessagesMedia: string = '';  
   people: Person[] = [
 
   ];
@@ -25,22 +26,24 @@ export class AppComponent implements OnInit {
   newPerson: Person = { name: '', dineroAportado: 0, aPagar: 0, porcentaje: 0, pagarRecibir: 'Pagar'  };
 
   ngOnInit() {
-    // Calcular el total pagado inicialmente
-    this.calculateTotalPagado();
 
-    // Calcular la morosidad inicial
-    this.calculateMorosidad();
   }
   deletePerson(index: number) {
     this.people.splice(index, 1);
-    this.calculateTotalPagado();
-    this.calculateMorosidad();
+    if(this.people.length>1){
+      this.calculateTotalPagado();
+      this.calculateMorosidad();
+    }
+   
   }
 
   addPerson() {
     this.people.push({ ...this.newPerson });
-    this.calculateTotalPagado();
-    this.calculateMorosidad();
+    console.log(this.people.length);
+    if(this.people.length>1){
+      this.calculateTotalPagado();
+      this.calculateMorosidad();
+    }
 
     this.newPerson = { name: '', dineroAportado: 0, aPagar: 0, porcentaje: 0, pagarRecibir: 'Pagar'  };
   }
@@ -52,7 +55,8 @@ export class AppComponent implements OnInit {
   calculateMorosidad() {
     // Calcular media
     this.media = this.totalPagado / this.people.length;
-
+    console.log(this.media);
+    this.logMessagesMedia =  `El coste medio fue de ${ this.media } €\n`;
     let totalDeudaPagadoresNega = 0;
     this.peoplePosi = [];
     this.peopleNega = [];

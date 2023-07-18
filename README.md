@@ -1,6 +1,5 @@
 # Moroseando
 
-![Moroseando Logo](./path/to/logo.png)
 
 Moroseando es una aplicación web que te permite calcular y dividir cuentas de forma equitativa entre un grupo de personas. Es ideal para situaciones en las que un grupo de amigos o compañeros comparte gastos y necesitan distribuirlos de manera justa.
 

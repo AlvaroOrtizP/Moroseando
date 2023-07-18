@@ -10,11 +10,6 @@ Moroseando es una aplicación web que te permite calcular y dividir cuentas de f
 - Calcula automáticamente el costo medio y distribuye la deuda entre las personas según su contribución.
 - Muestra un registro de mensajes con los pagos que deben realizar las personas.
 
-## Capturas de pantalla
-
-![Captura de pantalla 1](./tree/main/images/1.jpg)
-![Captura de pantalla 2](./path/to/screenshot2.png)
-
 ## Instalación
 
 1. Clona el repositorio: `git clone https://github.com/AlvaroOrtizP/Moroseando.git`
@@ -26,6 +21,11 @@ Moroseando es una aplicación web que te permite calcular y dividir cuentas de f
 1. Inicia la aplicación: `npm start`
 2. Accede a la aplicación en tu navegador: `http://localhost:4200`
 
+![Captura de pantalla 1](./tree/main/images/vacia.jpg)
+
+3. Rellena con los datos queridos
+
+![Captura de pantalla 2](./tree/main/images/completa.jpg)
 
 ## Autor
 

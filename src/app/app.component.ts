@@ -39,16 +39,28 @@ export class AppComponent implements OnInit {
     }
    
   }
-
-  addPerson() {
-    this.people.push({ ...this.newPerson });
-    if(this.people.length>1){
-      this.calculateTotalPagado();
-      this.calculateMorosidad();
-    }
-
-    this.newPerson = { name: '', dineroAportado: 0, aPagar: 0, porcentaje: 0, pagarRecibir: 'Pagar'  };
+  borrarTabla() {
+    this.people = [];
+    this.logMessages = '';
+    this.logMessagesMedia = '';
+    this.totalPagado = 0;
+    this.media = 0;
+    this.peoplePosi = [];
+    this.peopleNega = [];
   }
+  
+  addPerson() {
+    if (this.newPerson.name.trim() !== '') {
+      this.people.push({ ...this.newPerson });
+      if (this.people.length > 1) {
+        this.calculateTotalPagado();
+        this.calculateMorosidad();
+      }
+    }
+  
+    this.newPerson = { name: '', dineroAportado: 0, aPagar: 0, porcentaje: 0, pagarRecibir: 'Pagar' };
+  }
+  
 
   calculateTotalPagado() {
     this.totalPagado = this.people.reduce((total, person) => total + person.dineroAportado, 0);

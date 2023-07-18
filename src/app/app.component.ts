@@ -16,10 +16,7 @@ interface Person {
 export class AppComponent implements OnInit {
   logMessages: string = '';  
   people: Person[] = [
-    { name: 'Esther', dineroAportado: 6.19, aPagar: 0, porcentaje: 0, pagarRecibir: 'Pagar' },
-    { name: 'Julene', dineroAportado: 12.0, aPagar: 0, porcentaje: 0 , pagarRecibir: 'Pagar' },
-    { name: 'Alvaro', dineroAportado: 13.11, aPagar: 0, porcentaje: 0 , pagarRecibir: 'Pagar' },
-    { name: 'Alex', dineroAportado: 0, aPagar: 0, porcentaje: 0, pagarRecibir: 'Pagar'  }
+
   ];
   peoplePosi: Person[] = [];
   peopleNega: Person[] = [];
